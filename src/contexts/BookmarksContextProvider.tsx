@@ -17,7 +17,7 @@ export default function BookmarksContextProvider({
   children: React.ReactNode;
 }) {
   const [bookmarkedIds, setBookmarkedIds] = useLocalStorage<number[]>(
-    "bookmarkedIds",
+    "rmtdevBookmarkedIds",
     []
   );
   const { jobItems: bookMarkedJobItems, isLoading } =
